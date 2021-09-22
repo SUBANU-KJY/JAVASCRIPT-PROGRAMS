@@ -1,5 +1,6 @@
 //to print in JS
 console.log("SUBANU.K.J.Y");
+console.log("KJY,LP,JM,V,AB,S");
 console.log(23);
 var message="WELCOME SUBANU!"
 console.log(message);
