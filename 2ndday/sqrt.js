@@ -13,6 +13,23 @@ const sqrtvalue=Math.sqrt(b);
 console.log(`The SquareRoot of ${b}  is ${sqrtvalue}`);
 alert(`The SquareRoot of ${b}  is ${sqrtvalue}`);
 */
+const readline = require('readline')
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+rl.question("Enter x:", function(x) {
+    const sroot = Math.sqrt(x);
+console.log(sroot);
+
+        rl.close()
+    })
+
+rl.on("close", function() {
+    process.exit()
+})
 
 
 
