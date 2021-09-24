@@ -7,8 +7,13 @@ console.log(squareroot);
 
 //getting num from user at html Alert box
 // prompt();
-var b;
+/*var b;
 b=parseInt(prompt("ENTER A NUMBER:"));
 const sqrtvalue=Math.sqrt(b);
 console.log(`The SquareRoot of ${b}  is ${sqrtvalue}`);
 alert(`The SquareRoot of ${b}  is ${sqrtvalue}`);
+*/
+
+
+
+

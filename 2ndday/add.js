@@ -28,21 +28,30 @@ console.log(`subtraction=${sub}`);
 
 //  value getting From user at HTML Alert box:
 
-/*(var c=parseInt(prompt("Enter a value 1:"));
- var d=parseInt(prompt("Enter a value 2:"));
- sum=c+d;
- alert(`Addition of ${c} and ${d} is ${sum}`);*/
+  /*(var c=parseInt(prompt("Enter a value 1:"));
+  var d=parseInt(prompt("Enter a value 2:"));
+  sum=c+d;
+  alert(`Addition of ${c} and ${d} is ${sum}`);*/
 
 
+//getting value from user in terminal
 
-//Getting value from the user in the terminal:
-const readline = require('readline')
-
+const readline=require('readline');
 const r1=readline.createInterface({
-  input:process.stdin,
-  output:process.stdout  
+    input:process.stdin,
+    output:process.stdout
 })
-r1.question("Enter the value of N:",function(value){
-   const N=value;
-console.log(N);
+r1.question("Enter A value:",function(valueA){
+    A=parseInt(valueA);
+    r1.question("Enter B value:",function(valueB){
+        B=parseInt(valueB);
+        sum=A+B;
+    console.log(sum);
+    r1.close();
+    })
+    
+
+})
+r1.on("close",function(){
+  process.exit();
 })
