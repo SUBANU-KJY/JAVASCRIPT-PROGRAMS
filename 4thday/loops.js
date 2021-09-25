@@ -19,7 +19,7 @@ while(s<=5){
 //DO WHILE
 j=2;
 do{
-    console.log(j);
+    console.log(j);//------->waste of memory
     j=j+2;
 }while(j<10)
     
